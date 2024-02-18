@@ -1,0 +1,42 @@
+body{
+    
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+h1{
+    padding: 0%;
+    margin: 15px;
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+
+    
+}
+input{
+    padding: 0%;
+    margin: 15px;
+    height: 35px;
+    width: 355px;
+    border-radius: 10px;
+    align-items: center;
+}
+button{
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    background-color: blue;
+    height: 35px;
+    width: 65px;
+    border-radius: 8px;
+
+}
+p{
+    color: brown;
+    text-decoration: none;
+}
+img{
+    width: 445px;
+    height: 345px;
+    position: flex;
+}

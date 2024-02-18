@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="randoo.css">
+</head>
+<body>
+      <h1>pay_in</h1>
+      <input type="text" id="myInput" value="manikpramanik1996-2@okicici">
+<button id="copyButton">Copy</button>
+ <script>document.getElementById("copyButton").addEventListener("click", function() {
+    var inputElement = document.getElementById("myInput");
+    
+    // Select the text in the input field
+    inputElement.select();
+    
+    // Copy the selected text
+    document.execCommand("copy");
+    
+    // Deselect the input fie..
+    inputElement.blur();
+    
+    // Optionally, provide some feedback to the user
+    alert("Copied: " + inputElement.placeholder);
+});</script>
+<br>
+<form id="myForm">
+    <input type="text" id="inputField" placeholder="paste here UTR">
+     <button type="submit" id="submitButton"">Submit</button></form>
+</form>
+<script>document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission to avoid page reload
+    
+    var input = document.getElementById("inputField").value.trim(); // Get input value and remove leading/trailing whitespace
+    
+    if (input.length === 12) { // Check if input length is 12 characters
+        // Redirect to the next page with success message
+        window.location.href = "nextpage.html?message=UTR Successfully";
+    } else {
+        // Optionally, you can show an error message or handle invalid input in another way
+        console.log("Input must be 12 characters long.");
+    }
+});
+</script>
+
+<p>Important reminder.Afetr completing the UPI transaction please backfill <br>Ref No./UTR No.:UIPI Transaction Id freecharge: transaction Id (must 12 digits) </p>
+
+<img src="UPI-apps.jpg" alt="upi pics">
+</body>
+</html>

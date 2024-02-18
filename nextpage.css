@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(37, 212, 37);
+}
+h1{
+    color: antiquewhite;
+    background-color: rgb(37, 212, 37);
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 250PX;
+    text-overflow: clip;
+}
